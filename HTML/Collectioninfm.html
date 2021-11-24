@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title> Collect Information </title>
+
+    <form action="" name="myForm" onsubmit="return(validate()):">
+        <script>
+            function val() {
+                var a = /^\d{10}$/;
+                if (document.myForm.mobienumber.value.match(a)) {
+                    return true;
+                }
+                else {
+                    alert("please Enter correct number");
+                    return false;
+                }
+            }
+        </script>
+</head>
+<body>
+    <center>
+        <h1 align="center"> INFORMATION </h1>
+        <form>
+            <tr>
+                <td>NAME:</td>
+                <td><input action="Username" type="name" size=50% value=""></td>
+            </tr><br><br>
+            <tr>
+                <td>EmpID:</td>
+                <td><input action="emai" type="email" size=50%></td>
+            </tr><br><br>
+            <tr>
+                <td>DOB:</td>
+                <td><input action="date" type="date"></td>
+            </tr><br><br>
+            <tr>
+                <td>Phone No:</td>
+                <td><input type="number" name="mobienumber" size=50% value=""></td>
+            </tr><br><br>
+            <tr>
+                <td>Adress:</td>
+                <td><input action="text" type="address" size=50%></td>
+            </tr><br><br>
+            <tr>
+                <td>Course:</td>
+                <select name="moviepref">
+                    <options>
+                        <option value=1 selected="true">HTML
+                        <option value=2>JAVA
+                        <option value=3>PYTHON
+                        <option value=4>ORCAL
+                        <option value=5>DBMS
+                </select>
+            </tr><br><br>
+
+
+            </select>
+            <button onclick="return (val());">submit</button>
+            </form>
+</center>
+</body>
+</html>
+

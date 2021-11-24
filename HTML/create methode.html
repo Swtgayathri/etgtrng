@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function emp(name,id,date,mobile, address,course)
+{
+this.name = name;
+this.id = id;
+this.date = date;
+this.mobile = mobile;
+this.address = address;
+this.course = course;
+this.changeAddress = changeAddress;
+function changeAddress(otherAddress)
+{
+this.address=otherAddress; } }
+e=new emp("sreeja",203,"11/11/2000",9579277723,"hyderabad","ece");
+document.write(e.name+" "+e.id+" "+e.date+" "+e.mobile+" "+e.address+" "+e.course);
+var otheraddress=prompt("enter your address")
+e.changeAddress("otheraddress");
+document.write("<br>"+e.name+" "+e.id+" "+e.date+" "+e.mobile+" "+e.address+" "+e.course);
+</script></head>
+<body></body>
+</html>

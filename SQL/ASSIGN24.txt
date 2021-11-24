@@ -1,0 +1,33 @@
+select *from emp;
+select * from dept;
+select ename,job,sal,hiredate,empno from emp;
+select 
+ename
+,job
+,sal 
+,sal*12 as 'anual sal'
+from emp;
+select ename + '  , ' +job as 'employ title'
+from emp;
+select distinct job from emp;
+select ename,sal
+from emp
+where sal>2850;
+select ename,deptno from emp where ename = 'smith';
+select ename,job,HIREDATE
+from emp
+where HIREDATE between '1981-02-21' and '1981-05-01'
+order by 3 asc;
+select ename,deptno
+from emp
+where deptno in(10 ,30)
+order by 1 asc;
+select ename,hiredate 
+from emp
+where  hiredate in('1982')
+order by 2; 
+select ename 
+
+
+
+ 

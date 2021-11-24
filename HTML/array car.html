@@ -1,0 +1,23 @@
+<script>
+var i;
+var car = new Array();
+car[0] = "BMW";
+car[1] = "Maruthi";
+car[2] = "Suzuki";
+for (i=0;i<car.length;i++) {
+
+document.write(car[i] + "<br>");
+}
+document.write("<br>"+"1----"+ car.reverse());//reverese a string
+document.write("<br>"+"2----"+ car.length);//length of array
+document.write("<br>"+"3----"+ car.push("benz"));// pushing
+document.write("<br>"+"4----"+ car.pop() +" <br>" +car);
+document.write("<br>"+"5----"+ car.shift() +car);
+document.write("<br>"+"6----"+ car.unshift("atuo","benz") + "this is"+ car);
+document.write("<br>"+"7----"+ car.splice(0,3,"mahendra","sckoda") +"<br>"+ "this is "+"<br>" +car);
+document.write("<br>"+"8----"+ car.toString());
+document.write("<br>"+"9----"+ car.push("black"));//pushing
+document.write("<br>"+"10----"+car.pop()+"<br>"+car);
+document.write("<br>"+"11----"+ car.length);
+</script>
+
